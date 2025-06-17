@@ -1,18 +1,23 @@
-/* Header.css */
+/* Base Styles */
 .header {
   display: flex;
-  justify-content: space-between; /* Push logo left and nav right */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 60px; /* Add space on left and right */
+  padding: 0 60px;
   background-color: #0f1f26;
   height: 70px;
   color: white;
+  flex-wrap: wrap;
 }
 
-/* Logo */
 .logo {
   font-size: 20px;
   font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
 }
 
 /* Navigation buttons */
@@ -20,11 +25,49 @@
   background: none;
   border: none;
   color: white;
-  margin-left: 30px;
   font-size: 16px;
   cursor: pointer;
 }
 
 .nav button:hover {
-  color: #00ffff; /* Optional hover effect */
+  color: #00ffff;
+}
+
+/* Hamburger Menu (Hidden by default) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .header {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
