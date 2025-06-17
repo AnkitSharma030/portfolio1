@@ -1,0 +1,38 @@
+.projects {
+  padding: 4rem 2rem;
+  background-color: #e1d2d2;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+/* styles/Header.css */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0f2027;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 1.5rem 0.2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  flex-wrap: wrap; /* allows wrapping if needed */
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav button:hover {
+  text-decoration: underline;
+}
