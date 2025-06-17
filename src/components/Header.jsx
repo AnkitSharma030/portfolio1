@@ -7,17 +7,20 @@ const Header = () => {
 
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setMenuOpen(false); // Close menu on selection
+    setMenuOpen(false);
   };
 
   return (
     <header className="header">
       <div className="logo">Portfolio</div>
 
-      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
+      {/* Hamburger menu on the right */}
+      <div className="right-controls">
+        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
       <nav className={`nav ${menuOpen ? 'show' : ''}`}>
